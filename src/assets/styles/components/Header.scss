@@ -53,11 +53,12 @@
           .subtract {
             position: absolute;
             // top: 1px;
-            left: 6px;
+            left: 5px;
             // display: inline-block;
             width: 1px;
             height: 101px;
             background-color: $secondary-color;
+            z-index: 1;
           }
 
           ul {
@@ -111,14 +112,15 @@
                 height: 15px;
                 gap: 6px;
                 position: absolute;
-                z-index: 818241892;
+                z-index: 818241892123;
 
                 .indicator {
-                  width: 9.51px;
-                  height: 9.51px;
+                  width: 7.51px;
+                  height: 7.51px;
                   // position: absolute;
                   // top: 1px;
                   // left: 2px;
+                  position: relative;
                   transform: rotate(-45deg);
                   // border-right: 1px solid #fff;
                   // border-bottom: 1px solid #fff;
@@ -131,31 +133,35 @@
 
                 a {
                   // position: absolute;
-                  width: 130px;
+                  max-width: 58px;
                   height: 17px;
                   font-size: 14px;
                   text-transform: uppercase;
                   text-decoration: none;
                   color: $main-color;
                   font-weight: 950;
-                  justify-self: flex-end;
+                  // justify-self: flex-end;
                 }
+              }
+
+              li:hover {
+                color: $secondary-color;
               }
 
               li:hover {
                 .indicator {
                   width: 9.51px;
                   height: 9.51px;
-                  display: inline-block;
-                  border-top: 1px solid $main-color;
+                  // width: 20px;
+                  // display: inline-block;
+                  border-right: 1px solid $main-color;
                   border-bottom: 1px solid $main-color;
-                  background-color: $main-color;
+                  background-color: $bg-color;
                   z-index: 999999999999 !important;
                   // display: none;
                   opacity: 1;
                 }
               }
-              // }
             }
           }
         }
