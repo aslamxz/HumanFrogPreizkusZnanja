@@ -1,0 +1,112 @@
+@use "../base/variables" as *;
+
+.highlighted-news {
+  position: absolute;
+  width: 521px;
+  height: 488px;
+  top: 652px;
+  left: 533px;
+  border-bottom: 1px solid rgba(75, 172, 135, 1);
+
+  .highlighted-news-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    height: 465px;
+
+    h4 {
+      height: 205px;
+      width: 100%;
+      // font-family: Verb;
+      font-weight: 950;
+      font-size: 52px;
+      line-height: 90%;
+      letter-spacing: -2%;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      offset: 0%;
+      text-decoration-thickness: 6%;
+      color: $main-color;
+    }
+
+    .highlighted-news-text-box {
+      width: 521px;
+      height: 230px;
+
+      p {
+        width: 521px;
+        height: 210px;
+        font-family: "Georgia", sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 110.00000000000001%;
+        letter-spacing: 0%;
+        color: rgba(61, 95, 82, 1);
+      }
+    }
+
+    .highlighted-news-date {
+      color: rgba(115, 122, 119, 1);
+      font-family: Verb;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 5%;
+      text-transform: uppercase;
+      width: 100%;
+      min-height: 17px;
+    }
+  }
+}
+
+.highlighted-news-mobile {
+  position: absolute;
+  top: 524px;
+  left: 20px;
+  width: 320px;
+  height: 366px;
+  border-bottom: 1px solid $main-color;
+
+  .highlighted-news-wrapper-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 294px;
+    gap: 20px;
+
+    h4 {
+      font-size: 32px;
+      font-weight: 950;
+      color: $main-color;
+      line-height: 90%;
+      // letter-spacing: -2;
+      height: 136px;
+    }
+
+    .highlighted-news-text-box-mobile {
+      height: 174px;
+
+      p {
+        // position: absolute;
+        height: 156px;
+        font-size: 24px;
+        line-height: 110.00000000000001%;
+        font-weight: 400;
+        color: rgba(61, 95, 82, 1);
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+    }
+
+    .highlighted-news-date-mobile {
+      width: 100%;
+      min-height: 17px;
+      font-size: 14px;
+      letter-spacing: 5%;
+      text-transform: uppercase;
+      line-height: 100%;
+      font-weight: 400;
+      color: rgba(115, 122, 119, 1);
+    }
+  }
+}

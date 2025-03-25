@@ -1,0 +1,302 @@
+@use "../base/variables" as *;
+
+.footer {
+  display: none;
+}
+
+.footer-mobile {
+  position: absolute;
+  width: 322px;
+  min-height: 660px;
+  top: 1803px;
+  left: 19px;
+
+  section {
+    width: 100%;
+    display: flex;
+  }
+
+  .social-container-mobile {
+    min-height: 403px;
+    flex-direction: column;
+    gap: 16px;
+
+    article {
+      display: flex;
+      width: 100%;
+    }
+
+    .news-signup-container-mobile {
+      min-height: 143px;
+      gap: 18px;
+      flex-direction: column;
+
+      .news-upline-mobile {
+        width: 322px;
+        border-top: 8px solid rgba(216, 215, 211, 1);
+      }
+
+      .news-signup-wrapper-mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 109px;
+        gap: 12px;
+
+        h4 {
+          height: 17px;
+          width: 322px;
+          font-family: Verb;
+          font-weight: 950;
+          font-size: 14px;
+          line-height: 100%;
+          letter-spacing: 5%;
+          text-transform: uppercase;
+          color: rgba(34, 46, 41, 1);
+        }
+
+        .news-input-container-mobile {
+          display: flex;
+          width: 100%;
+          min-height: 80px;
+          gap: 12px;
+          flex-direction: column;
+
+          .input-email-wrapper-mobile {
+            position: relative;
+            width: 321px;
+            height: 48px;
+            input {
+              position: relative;
+              width: 321px;
+              height: 48px;
+              border: 1px solid rgba(216, 215, 211, 1);
+
+              &::placeholder {
+                transition: opacity 0.3s ease;
+              }
+
+              &:focus {
+                outline: none;
+                padding-left: 17px;
+
+                &::placeholder {
+                  opacity: 0;
+                }
+
+                + .input-indicator-mobile {
+                  display: none;
+                }
+              }
+            }
+
+            input::placeholder {
+              position: absolute;
+              width: 170;
+              height: 16;
+              top: 16px;
+              left: 16px;
+              font-family: Verb;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 120%;
+              letter-spacing: 0%;
+            }
+
+            .input-indicator-mobile {
+              position: absolute;
+              left: 264px;
+              top: 24px;
+              width: 45px;
+              border: 1.5px solid $main-color;
+            }
+
+            .input-indicator-mobile::after {
+              content: "";
+              position: absolute;
+              //   top: 24px;
+              right: -5px;
+              top: -5px;
+              //   left: 264px;
+              border-top: 5px solid transparent;
+              border-bottom: 5px solid transparent;
+              border-left: 7.5px solid $main-color;
+              //   rotate: (-180deg);
+            }
+          }
+
+          .acceptance-box-mobile {
+            // position: relative;
+            // display: flex;
+            // width: 100%;
+            // min-height: 20px;
+            // gap: 9px;
+            // align-items: center;
+
+            label {
+              width: 100%;
+              height: 20px;
+              gap: 9px;
+              display: flex;
+              cursor: pointer;
+              font-family: Verb;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 120%;
+              letter-spacing: 0%;
+              color: rgba(115, 122, 119, 1);
+              align-items: flex-end;
+
+              input {
+                display: none;
+              }
+
+              span {
+                width: 20px;
+                height: 20px;
+                border: 1px solid rgba(216, 215, 211, 1);
+                background-color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .social-cta-container-mobile {
+      height: 106px;
+      gap: 15px;
+      flex-direction: column;
+      border-bottom: 8px solid rgba(216, 215, 211, 1);
+
+      .social-title-mobile {
+        font-family: Verb;
+        font-weight: 950;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 5%;
+        text-transform: uppercase;
+        min-height: 17px;
+        width: 100%;
+      }
+
+      .social-logos-container-mobile {
+        display: flex;
+        min-width: 168px;
+        min-height: 48px;
+        gap: 12px;
+
+        span {
+          background-color: $main-color;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          width: 48px;
+          height: 48px;
+          cursor: pointer;
+
+          img {
+            width: 28px;
+            height: 28px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    .archive-container-mobile {
+      flex-direction: column;
+      height: 120px;
+      gap: 2px;
+
+      h4 {
+        width: 100%;
+        max-height: 17px;
+        color: $main-color;
+      }
+
+      p {
+        width: 100%;
+        height: 74px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        color: rgba(115, 122, 119, 1);
+      }
+    }
+
+    .social-underline-mobile {
+      width: 322px;
+      border-bottom: 8px solid rgba(216, 215, 211, 1);
+    }
+  }
+
+  .marks-container-mobile {
+    align-items: center;
+    min-height: 51px;
+    gap: 18px;
+    border-bottom: 2px solid rgba(216, 215, 211, 1);
+
+    .ministrstvo-logo-mobile {
+      width: 192px;
+      height: 32px;
+      opacity: 50%;
+    }
+
+    .podjetja-logo-mobile {
+      width: 89px;
+      height: 51px;
+      opacity: 50%;
+    }
+  }
+
+  .copyright-container-mobile {
+    flex-direction: column;
+    min-height: 162px;
+    gap: 20px;
+    justify-content: center;
+
+    h4 {
+      width: 323px;
+      max-height: 20px;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: 0%;
+      color: rgba(115, 122, 119, 1);
+    }
+
+    .copyright-links {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: 0%;
+      color: $main-color;
+    }
+
+    span {
+      width: 240px;
+      height: 42px;
+
+      #humanfrog-cta {
+        height: 40px;
+        width: 240px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0%;
+        color: rgba(75, 172, 135, 1);
+        text-decoration: none;
+      }
+
+      img {
+        width: 28px;
+        height: 16px;
+      }
+    }
+  }
+}

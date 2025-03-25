@@ -1,0 +1,19 @@
+@use "./variables" as *;
+
+@font-face {
+  font-family: "Verb";
+  src: url("../../assets/fonts/tipografija/Verb/Verb-Regular.woff2"),
+    url("../../assets/fonts/tipografija/Verb/Verb-Regular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  position: relative;
+  font-family: $primary-font;
+  width: 100vw;
+  height: 100vh;
+  background-color: $bg-color;
+  display: flex;
+  justify-content: center;
+}

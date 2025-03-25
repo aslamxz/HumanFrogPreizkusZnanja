@@ -1,0 +1,299 @@
+@use "../base/variables" as *;
+
+.seznam-novic {
+  position: absolute;
+  width: 294px;
+  min-height: 441px;
+  top: 1181px;
+  left: 533px;
+
+  .seznam-novic-title-box {
+    display: none;
+  }
+
+  .novica-bliznjica {
+    position: relative;
+    width: 100%;
+    min-height: 76px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    a {
+      display: inline-block;
+      width: 294px;
+      height: 48px;
+      top: 8px;
+      font-family: "Georgia", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 120%;
+      letter-spacing: 0%;
+      background-color: transparent;
+      text-decoration: none;
+      // text-decoration: underline;
+      // text-decoration-style: dotted;
+      // text-underline-offset: 15.5%;
+      // text-decoration-thickness: 7%;
+      color: $main-color;
+
+      .underline {
+        background-image: linear-gradient(transparent, transparent),
+          linear-gradient(#00c9a5, #00c9a5);
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%, 0 100%;
+        transition: background-size 0.35s ease-out 0.1s,
+          color 0.25s ease-out 0.05s;
+        border-width: 0;
+        border-bottom: 1px dotted $main-color;
+        display: none;
+      }
+
+      .underline:hover {
+        background-size: 100% 100%, 0 0;
+        color: $main-color;
+      }
+      // border-width: 0;
+      // border-bottom: 1px solid rgba(255, 255, 255, 1);
+      // background-image: linear-gradient(transparent, transparent),
+      //   linear-gradient(#00c9a5, #00c9a5);
+      // background-position: 100% 100%, 0 100%;
+      // background-repeat: no-repeat;
+      // background-size: 100% 100%, 0 100%;
+      // transition: background-size 0.35s ease-out 0.1s,
+      //   color 0.25s ease-out 0.05s;
+    }
+
+    .shorter-title {
+      width: 100%;
+      height: 29px;
+    }
+
+    p {
+      width: 100%;
+      height: 16px;
+      // font-family: Verb;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 5%;
+      text-transform: uppercase;
+      color: rgba(115, 122, 119, 1);
+    }
+  }
+
+  .more-news {
+    display: flex;
+    gap: 10px;
+    max-width: 177px;
+    min-height: 37px;
+    padding: 10px 0;
+
+    .more-news-fixed {
+      position: absolute;
+      width: 177px;
+      min-height: 17px;
+
+      .more-news-box {
+        display: flex;
+        gap: 6px;
+        width: 177px;
+        min-height: 17px;
+
+        a {
+          min-width: 79px;
+          font-size: 14px;
+          text-transform: uppercase;
+          color: $main-color;
+          font-weight: 400;
+          text-decoration-line: underline;
+          text-decoration-style: dotted;
+          text-decoration-thickness: 7.5%;
+          text-underline-offset: 13.5%;
+          text-decoration-skip-ink: auto;
+        }
+
+        .indicator-gap-fixed {
+          display: flex;
+
+          span {
+            align-self: center;
+            width: 45px;
+            height: 1px;
+            border: 1.5px;
+            rotate: (-180deg);
+            background-color: $main-color;
+          }
+
+          span::after {
+            content: "";
+            position: absolute;
+            rotate: (180deg);
+            width: 0;
+            height: 0;
+            top: -5px;
+            left: -1px;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 7.5px solid $main-color;
+          }
+        }
+      }
+    }
+  }
+
+  .border-top-addon {
+    border-top: 1px solid rgba(216, 215, 211, 1);
+    // opacity: 50%;
+  }
+
+  .border-bottom-addon {
+    border-bottom: 1px solid rgba(216, 215, 211, 1);
+    // opacity: 50%;
+  }
+}
+
+.seznam-novic-mobile {
+  position: absolute;
+  top: 901px;
+  left: 22px;
+  width: 320px;
+  min-height: 360px;
+
+  .seznam-novic-title-box-mobile {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 31px;
+
+    h2 {
+      font-size: 14px;
+      color: rgba(117, 114, 110, 1);
+      text-transform: uppercase;
+      max-height: 17px;
+    }
+  }
+
+  .novica-bliznjica-mobile {
+    position: relative;
+    width: 318px;
+    height: 92px;
+
+    .separator-line-mobile {
+      position: absolute;
+      top: 0;
+      width: 318px;
+      height: 1px;
+      background-color: rgba(216, 215, 211, 1);
+    }
+
+    // .underline-mobile {
+    //   display: inline-block;
+    //   position: relative;
+    //   background-image: linear-gradient(transparent, transparent),
+    //     linear-gradient($secondary-color, $secondary-color);
+    //   background-position: 100% 100%, 0 100%;
+    //   background-repeat: no-repeat;
+    //   background-size: 100% 100%, 0 100%;
+    //   transition: background-size 0.35s ease-out 0.1s,
+    //     color 0.25s ease-out 0.05s;
+    // }
+
+    // .underline-mobile:hover {
+    //   background-size: 100% 100%, 100% 100%;
+    // }
+
+    a {
+      display: inline-block;
+      position: relative;
+      top: 8px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      width: 318px;
+      height: 48px;
+      font-size: 20px;
+      line-height: 120%;
+      font-weight: 400;
+      // text-decoration-line: underline;
+      // text-decoration-style: dotted;
+      // text-decoration-thickness: 7%;
+      // text-underline-offset: 15.5%;
+      color: $main-color;
+      .underline-mobile {
+        display: none;
+      }
+    }
+
+    p {
+      position: absolute;
+      top: 64px;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: rgba(115, 122, 119, 1);
+    }
+  }
+
+  .novica-bliznjica-mobile:nth-of-type(3) {
+    border-bottom: 1px solid rgba(216, 215, 211, 1);
+  }
+
+  .more-news-mobile {
+    display: flex;
+    gap: 10px;
+    max-width: 177px;
+    min-height: 37px;
+    padding: 10px 0;
+
+    .more-news-fixed-mobile {
+      position: absolute;
+      width: 177px;
+      min-height: 17px;
+
+      .more-news-box-mobile {
+        display: flex;
+        gap: 6px;
+        width: 177px;
+        min-height: 17px;
+
+        a {
+          min-width: 79px;
+          font-size: 14px;
+          text-transform: uppercase;
+          color: $main-color;
+          font-weight: 400;
+          text-decoration-line: underline;
+          text-decoration-style: dotted;
+          text-decoration-thickness: 7.5%;
+          text-underline-offset: 13.5%;
+          text-decoration-skip-ink: auto;
+        }
+
+        .indicator-gap-fixed-mobile {
+          display: flex;
+
+          span {
+            align-self: center;
+            width: 45px;
+            height: 1px;
+            border: 1.5px;
+            rotate: (-180deg);
+            background-color: $main-color;
+          }
+
+          span::after {
+            content: "";
+            position: absolute;
+            rotate: (180deg);
+            width: 0;
+            height: 0;
+            top: -5px;
+            left: -1px;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 7.5px solid $main-color;
+          }
+        }
+      }
+    }
+  }
+}

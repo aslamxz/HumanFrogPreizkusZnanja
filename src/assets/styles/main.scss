@@ -1,0 +1,17 @@
+// Import bases
+@use "base/global";
+@use "base/reset";
+@use "base/variables";
+
+// Import components
+@use "components/Header.scss";
+@use "components/SubHeader.scss";
+@use "components/HighlightedNovica.scss";
+@use "components/SeznamNovic.scss";
+@use "components/SeznamDogodkov.scss";
+@use "components/Footer.scss";
+
+// Import pages
+@use "pages/Aktualno.scss";
+@use "pages/Prispevki.scss";
+@use "pages/StrokovnaNovicaDetail.scss";
